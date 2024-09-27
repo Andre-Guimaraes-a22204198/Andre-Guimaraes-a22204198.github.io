@@ -1,7 +1,21 @@
 body {
-    height: 900px;
+    height: 2500px;
   background-color: purple; 
   background-image: linear-gradient(to bottom right, purple, pink);
+
+  
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centraliza o texto horizontalmente */
+  
+
+  /* Definindo margens para criar espaçamento no topo da página */
+  .content {
+    max-width: 800px;    /* Define a largura máxima do texto */
+    margin: 0 auto;      /* Centraliza o bloco de texto horizontalmente */
+    padding-top: 50px;   /* Adiciona espaçamento no topo da página */
+  }
 
   .button {
     display: inline-block;
