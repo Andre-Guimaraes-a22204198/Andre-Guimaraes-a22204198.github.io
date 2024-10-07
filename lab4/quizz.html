@@ -4,73 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz sobre Tóquio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Mantendo o mesmo arquivo de estilo -->
 </head>
 <body>
 
-    <h1>Quiz sobre Tóquio</h1>
-    <h2>Quizz</h2>
+    <div class="card"> <!-- Usando a mesma classe de card -->
+        <h2>Quiz sobre Tóquio</h2> <!-- Título com a mesma tag h2 -->
 
-    <form method="get" action="https://postman-echo.com/get">
+        <form method="get" action="https://postman-echo.com/get">
 
-        <fieldset>
-            <legend>Dados Pessoais</legend>
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" size="30" autocomplete="name" autofocus required><br><br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" autofocus required>
 
-            <label for="apelido">Apelido:</label>
-            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" size="30" autocomplete="family-name" required><br><br>
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" autocomplete="family-name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" size="30" autocomplete="email" required><br><br>
-        </fieldset>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="email" required>
+            </fieldset>
 
-        <fieldset>
-            <legend>Quizz sobre Tóquio</legend>
+            <!-- Quizz sobre Tóquio -->
+            <fieldset>
+                <legend>Quizz sobre Tóquio</legend>
+<br>
+                <label for="populacao">Qual é a população aproximada de Tóquio?</label>
+                <input type="number" id="populacao" name="populacao" placeholder="Use a imaginação" min="1" step="1000000" required>
+                
+                <label>Qual o ponto turístico mais famoso de Tóquio?</label><br>
+                <input type="radio" id="torre" name="ponto" value="Torre de Tóquio" required>
+                <label for="torre">Torre de Tóquio</label>
+                <input type="radio" id="palacio" name="ponto" value="Palácio Imperial">
+                <label for="palacio">Palácio Imperial</label>
+                <br>
+                <input type="radio" id="shibuya" name="ponto" value="Shibuya Crossing">
+                <label for="shibuya">Shibuya Crossing</label>
 
-            <label for="populacao">Qual é a população aproximada de Tóquio?</label>
-            <input type="number" id="populacao" name="populacao" placeholder="Use a imaginação" min="1" step="1000000" required><br><br>
+                <label for="atividades">Quais atividades acha que mais são feitas em Tóquio?</label><br>
+                <input type="checkbox" id="compras" name="atividades" value="Compras">
+                <label for="compras">Compras em Shibuya</label>
+                <input type="checkbox" id="gastronomia" name="atividades" value="Gastronomia">
+                <label for="gastronomia">Experimentar a gastronomia</label>
+                <input type="checkbox" id="templos" name="atividades" value="Visitar Templos">
+                <label for="templos">Visitar Templos Históricos</label>
+                <br>
 
-            <label>Qual o ponto turístico mais famoso de Tóquio?</label><br>
-            <input type="radio" id="torre" name="ponto" value="Torre de Tóquio" required>
-            <label for="torre">Torre de Tóquio</label><br>
-            <input type="radio" id="palacio" name="ponto" value="Palácio Imperial">
-            <label for="palacio">Palácio Imperial</label><br>
-            <input type="radio" id="shibuya" name="ponto" value="Shibuya Crossing">
-            <label for="shibuya">Shibuya Crossing</label><br><br>
+                <label for="fundacao">Data de fundação de Tóquio:</label>
+                <input type="date" id="fundacao" name="fundacao" required>
 
-            <label for="atividades">Quais atividades acha que mais são feitas em Tóquio?</label><br>
-            <input type="checkbox" id="compras" name="atividades" value="Compras">
-            <label for="compras">Compras em Shibuya</label><br>
-            <input type="checkbox" id="gastronomia" name="atividades" value="Gastronomia">
-            <label for="gastronomia">Experimentar a gastronomia</label><br>
-            <input type="checkbox" id="templos" name="atividades" value="Visitar Templos">
-            <label for="templos">Visitar Templos Históricos</label><br><br>
+                <label for="horario">Melhor horário para visitar o mercado de peixe de Tsukiji:</label>
+                <input type="time" id="horario" name="horario" required>
+                <br>
+                <label for="cor">Qual cor melhor representa Tóquio?</label>
+                <input type="color" id="cor" name="cor" value="#ff0000">
 
-            <label for="fundacao">Data de fundação de Tóquio:</label>
-            <input type="date" id="fundacao" name="fundacao" required><br><br>
+                <label for="nota">De 1 a 10, qual a sua avaliação de Tóquio?</label>
+                <input type="range" id="nota" name="nota" min="1" max="10" step="1">
+                <br>
+                <label for="comentario">Comentário sobre Tóquio:</label>
+                <textarea id="comentario" name="comentario" rows="4" maxlength="200" placeholder="Escreva seu comentário aqui..."></textarea>
 
-            <label for="horario">Melhor horário para visitar o mercado de peixe de Tsukiji:</label>
-            <input type="time" id="horario" name="horario" required><br><br>
+                <label for="imagem">Envie uma imagem de Tóquio:</label><br>
+                <input type="image" src="https://via.placeholder.com/100" alt="Enviar imagem">
+            </fieldset>
 
-            <label for="cor">Qual cor melhor representa Tóquio?</label>
-            <input type="color" id="cor" name="cor" value="#ff0000"><br><br>
-
-            <label for="nota">De 1 a 10, qual a sua avaliação de Tóquio?</label>
-            <input type="range" id="nota" name="nota" min="1" max="10" step="1"><br><br>
-
-            <label for="comentario">Comentário sobre Tóquio:</label><br>
-            <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="200" placeholder="Escreva seu comentário aqui..."></textarea><br><br>
-
-            <label for="imagem">Envie uma imagem de Tóquio:</label><br>
-            <input type="image" src="https://via.placeholder.com/100" alt="Enviar imagem"><br><br>
-
-        </fieldset>
-        
-        <input type="reset" value="Redefinir formulário"><br><br>
-        <input type="submit" value="Enviar Quizz">
-
-    </form>
+            <div class="buttons">
+                <input type="reset" value="Redefinir Formulário"> <!-- Mantendo consistência -->
+                <input type="submit" value="Enviar Quiz">
+            </div>
+        </form>
+    </div>
 
 </body>
 </html>
