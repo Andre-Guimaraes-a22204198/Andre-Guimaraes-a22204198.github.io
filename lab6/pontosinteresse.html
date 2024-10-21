@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> * {box-sizing: border-box;} </style>
+    <title>A Minha Cidade - Pontos de Interesse em Tóquio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+        h2 {
+            text-transform: uppercase;
+        }
+
+    
+        ol {
+            list-style-type: upper-roman;
+        }
+
+     
+        ul {
+            list-style-type: square;
+        }
+
+        ol li:nth-child(odd) {
+            color: rgb(115, 0, 255);
+        }
+
+        ol li:nth-child(even) {
+            color: #ff21f0
+        }
+
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        
+        table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        table th {
+            background-color: hsl(318, 100%, 72%), 100%, 72%);
+            color: white;
+        }
+
+      
+        ol li, ul li {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Pontos de Interesse em Tóquio</h2>
+
+        <form method="get" action="#">
+
+            <fieldset>
+                <legend>Pesquisa de Pontos de Interesse</legend>
+                <label for="pesquisa">Escreva o nome do local:</label>
+                <input type="text" id="pesquisa" name="pesquisa" placeholder="Ex.: Templo, Restaurante" autocomplete="off" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Top 5 Restaurantes</legend>
+                <ol>
+                    <li>
+                        <strong>Sukiyabashi Jiro</strong> <br>Famoso pelo sushi<br>
+                        <em>Prato sugerido:</em> Degustação de sushi omakase
+                    </li>
+                    <li>
+                        <strong>Narisawa</strong><br> Cozinha moderna japonesa<br>
+                        <em>Prato sugerido:</em> Menu de degustação sazonal
+                    </li>
+                    <li>
+                        <strong>Ichiran Ramen</strong><br> Especializado em ramen<br>
+                        <em>Prato sugerido:</em> Ramen de Tonkotsu
+                    </li>
+                    <li>
+                        <strong>Tempura Kondo</strong> <br>Tempura de alta qualidade<br>
+                        <em>Prato sugerido:</em> Tempura de camarão e legumes
+                    </li>
+                    <li>
+                        <strong>Gonpachi</strong> <br> Conhecido pelo ambiente e yakitori<br>
+                        <em>Prato sugerido:</em> Yakitori (espetinhos de frango)
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>Top 5 Monumentos</legend>
+                <ol>
+                    <li>
+                        <strong>Templo Senso-ji</strong> - O templo mais antigo de Tóquio
+                    </li>
+                    <li>
+                        <strong>Torre de Tóquio</strong> - Símbolo da cidade
+                    </li>
+                    <li>
+                        <strong>Meiji Jingu</strong> - Santuário dedicado ao Imperador Meiji
+                    </li>
+                    <li>
+                        <strong>Palácio Imperial</strong> - Residência oficial da Família Imperial
+                    </li>
+                    <li>
+                        <strong>Skytree de Tóquio</strong> - A torre de transmissão mais alta do mundo
+                    </li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>Locais a não perder</legend>
+                <ul>
+                    <li>
+                        <strong>Cruzamento de Shibuya</strong> - O cruzamento mais movimentado do mundo
+                    </li>
+                    <li>
+                        <strong>Parque Ueno</strong> - Perfeito para ver as cerejeiras em flor
+                    </li>
+                    <li>
+                        <strong>Akihabara</strong> - O bairro da tecnologia e cultura pop
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Melhor Local para Tirar uma Foto</legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5055448787196!2d139.69929841526255!3d35.65803478020078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9bc6adbb81%3A0xe3b84eadd97977a7!2sTokyo%20Tower!5e0!3m2!1spt-BR!2sjp!4v1696953481537!5m2!1spt-BR!2sjp" width="360" height="180"></iframe>
+            </fieldset>
+
+            <fieldset>
+                <legend>Melhor Altura para Visitar</legend>
+                <table>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Temperatura</th>
+                        <th>Chuva</th>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                        <td>12°C</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>Abril</td>
+                        <td>17°C</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Outubro</td>
+                        <td>19°C</td>
+                        <td>23%</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Pesquisar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
