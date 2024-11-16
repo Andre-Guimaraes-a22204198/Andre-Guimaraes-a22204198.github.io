@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade - A Minha Cidade</title>
+    
+    <link rel="stylesheet" href="responsive.css">
+    <script defer src="main.js"></script>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+        }
+        #hover-text {
+            cursor: pointer;
+        }
+        #color-buttons button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        #text-input {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="header-title">A minha Cidade</h1>
+            <button class="button" style="vertical-align:middle" onclick="window.location.href='/lab6/multimedia.html';">
+                <span>Multimedia</span>
+            </button>
+        </header>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+
+        <p id="hover-text">1. Passa por aqui!</p>
+
+        <p id="color-buttons">
+            2. Pinta-me!
+            <button data-color="red">Red</button>
+            <button data-color="green">Green</button>
+            <button data-color="blue">Blue</button>
+        </p>
+
+        <p>
+            3. Experimenta escrever...
+            <input type="text" id="text-input" placeholder="Escreva algo">
+        </p>
+
+        <p>
+            4. Escolha uma cor:
+            <select id="color-select" onchange="document.body.style.backgroundColor = this.value;">
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </p>
+
+        <p>
+            5.
+            <button id="counter-button">Conta!</button>
+            <span id="counter-display">0</span>
+        </p>
+
+        <form id="user-info-form" onsubmit="submitUserInfo(event)">
+            <input type="text" id="user-name" placeholder="Nome" required>
+            <input type="number" id="user-age" placeholder="Idade" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="user-message"></p>
+
+        <p>7. Automatic Counter: <span id="auto-counter">0</span></p>
+    </main>
+</body>
+</html>

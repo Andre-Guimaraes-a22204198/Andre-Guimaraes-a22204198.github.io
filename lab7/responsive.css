@@ -1,0 +1,221 @@
+/* Arquivo: responsive.css */
+
+/* Estilo base, aplicado a todos os tamanhos de tela */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, nav, main, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.842);
+    width: 100%;
+    max-width: 1200px;
+}
+
+header {
+    background-color: hsl(283, 100%, 52%)00%, 54%);
+    color: white;
+    text-align: center;
+    font-size: clamp(1.5em, 4vw, 2.5em);
+    word-wrap: break-word;
+}
+
+header h1 {
+    font-size: clamp(1.2em, 3vw + 1em, 2em);
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
+
+nav {
+    background-color: hsl(290, 100%, 51%), 100%, 58%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f8f8f8;
+}
+
+footer {
+    background-color: hsl(323, 100%, 53%), 100%, 53%);
+    color: #ccc;
+    text-align: center;
+}
+
+/* Mobile Pequeno (320px) */
+@media (max-width: 320px) {
+    header, main, footer {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        font-size: 1.4em;
+    }
+}
+
+/* Mobile Médio (até 375px) */
+@media (max-width: 375px) {
+    header, main, footer {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        font-size: 1.5em;
+    }
+}
+
+/* Mobile Grande (até 425px) */
+@media (max-width: 425px) {
+    header, main, footer {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        font-size: 1.6em;
+    }
+}
+
+/* Tablet (426px a 768px) */
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header, main, footer {
+        width: 95%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        font-size: 1.75em;
+    }
+}
+
+/* Laptop (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'header'
+            'nav'
+            'main'
+            'footer';
+        grid-gap: 20px;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header {
+        font-size: 2em;
+    }
+}
+
+/* Laptop Grande (1025px a 1444px) */
+@media (min-width: 1025px) and (max-width: 1444px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: 
+            'header header header'
+            'nav main aside'
+            'footer footer footer';
+        grid-gap: 20px;
+        justify-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    header {
+        font-size: 2.5em;
+    }
+}
+
+/* 4K (1445px e acima) */
+@media (min-width: 1445px) {
+    body {
+        display: flex;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+            'header header header'
+            'nav main aside'
+            'footer footer footer';
+        grid-gap: 30px;
+        justify-items: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header {
+        font-size: 3em;
+    }
+}

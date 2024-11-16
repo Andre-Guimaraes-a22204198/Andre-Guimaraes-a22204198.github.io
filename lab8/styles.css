@@ -1,0 +1,299 @@
+body {
+  display : flex;
+  height: 1800 px;
+  background-color: purple; 
+  background-image: linear-gradient(to bottom right, purple, pink);
+  margin: 20;
+  align-items: center;
+  justify-content: center;
+  padding: 20;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;    
+  margin: 0 auto;      
+  padding-top: 50px;   
+}
+
+
+.box {
+  background-color: #ee71d3; 
+  border: 5px solid #ff5cd6; 
+  padding: 25px;
+  outline: 10px solid #ff244985
+  outline-offset: 10px; 
+  margin: 10px auto; 
+  width:80%; 
+  text-align: center; 
+}
+
+/* Estilizando o botão */
+.button {
+  display: inline-block;
+  border-radius: 40px;
+  background-color: #ae00fe88;
+  border: #fc4a4a;
+  color: #ffffff
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 30px;
+}
+
+.button:hover span:after {
+  opacity: 13;
+  right: 0;
+}
+
+label {
+  font-size: small;
+}
+
+input {
+  font-size: medium;
+}
+
+label, input {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.card {
+  background-color: rgb(255, 138, 236);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+}
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+legend {
+  font-weight: bold;
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Estilos dos botões */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff6347;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: purple;
+    background-image: linear-gradient(to bottom right, purple, pink);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.box {
+    background-color: #ee71d3;
+    border: 5px solid #ff5cd6;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #ae00fe88;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #fadc31;
+}
+
+img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #f7c3e9;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #fff;
+    text-align: left;
+}
+
+th {
+    background-color: #ff5cd6;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    background-color: white;
+}
+
+a {
+    color: #c600fe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    background-color: #ee71d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 4px;
+}
+ol li, ul li {
+  font-size: 14px !important; /* Define um tamanho fixo de fonte com alta prioridade */
+}
+/* Estilo básico para a barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+

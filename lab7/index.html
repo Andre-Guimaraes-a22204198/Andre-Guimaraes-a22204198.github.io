@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade</title>
+    
+    <link rel="stylesheet" href="responsive.css">
+    <script defer src="main.js"></script>
+    <style>
+        body {
+            background-color: lavender;
+            font-family: Arial, sans-serif;
+        }
+        #hover-text {
+            cursor: pointer;
+        }
+        #color-buttons button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+        #text-input {
+            padding: 5px;
+        }
+    </style>
+</head>
+<nav>
+    <ul class="navbar">
+        <li><a href="index.html">Landing Page</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="info.html">Informação</a></li>
+    </ul>
+</nav>
+
+<body>
+    <button class="button" style="vertical-align:middle" onclick="window.location.href='/lab7/eventos.html';">
+        <span>Eventos</span>
+      </button>
+    <p id="hover-text">1. Passa por aqui!</p>
+
+    <p id="color-buttons">
+        2. Pinta-me!
+        <button id="red-button">Red</button>
+        <button id="green-button">Green</button>
+        <button id="blue-button">Blue</button>
+    </p>
+
+    <p>
+        3. Experimenta escrever...
+        <input type="text" id="text-input" placeholder="Escreva algo">
+    </p>
+
+    <p>
+        4. Escolha uma cor em inglês:
+        <input type="text" id="page-color-input" placeholder="Digite uma cor">
+        <button id="submit-color">Submeter</button>
+    </p>
+
+    <p>
+        5.
+        <button id="counter-button">Conta!</button>
+        <span id="counter-display">0</span>
+    </p>
+</body>
+</html>
